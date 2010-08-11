@@ -2,6 +2,6 @@
 exports.name = Mustache.name;
 exports.version = Mustache.version;
 
-exports.to_html = function() {
+exports.to_html = exports.render = function() {
   return Mustache.to_html.apply(this, arguments);
 };
